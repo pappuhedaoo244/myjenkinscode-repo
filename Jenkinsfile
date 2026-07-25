@@ -1,5 +1,7 @@
 pipeline {
-    agent any
+    agent  {
+        label 'linux_node'
+    }
     //agent  = VM where the build will run
     // any = run on any availanle agent = run on current vm
     tools {
